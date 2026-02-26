@@ -16,16 +16,19 @@ document.querySelectorAll('.category-header').forEach(header => {
     });
 });
 
-// Smooth scrolling for navigation links
+// Smooth scrolling ТОЛЬКО для якорей (#) на этой же странице
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        // Проверяем что ссылка на этой же странице
+        if (this.pathname === window.location.pathname) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
     });
 });
