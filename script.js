@@ -30,16 +30,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Button click handlers
-document.querySelectorAll('.btn-primary, .btn-nav, .btn-book').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        if (this.textContent.includes('Book') || this.textContent.includes('Appointment')) {
-            e.preventDefault();
-            alert('Thank you! Booking form will open shortly.');
-        }
-    });
-});
-
 // Navbar scroll effect
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
