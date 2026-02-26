@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Your Beauty Appointment - Nails Studio</title>
+    <title>Marque o Seu Atendimento</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="formulary.css">
@@ -15,16 +15,13 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <span class="logo-icon">✨</span>
-                <h1>Nails Studio</h1>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html#main-services">Services</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#main-services">Servicos</a></li>
+                <li><a href="index.html#about">Sobre mim</a></li>
+                <li><a href="index.html#contact">Contactos</a></li>
             </ul>
-            <a href="booking.html" class="btn btn-nav">Book</a>
+            <a href="formulary.html" class="btn btn-nav">Book</a>
         </div>
     </nav>
 
@@ -36,20 +33,16 @@
         </div>
         
         <div class="booking-hero-content">
-            <h1>Reserve Your Perfect Look</h1>
-            <p>Book an appointment with our beauty experts</p>
+            <h1>Reserve seu visual perfeito</h1>
+            <p>Agende uma consulta</p>
             <div class="hero-stats">
                 <div class="stat">
                     <h3>500+</h3>
-                    <p>Happy Clients</p>
+                    <p>Clientes Felizes</p>
                 </div>
                 <div class="stat">
-                    <h3>50+</h3>
-                    <p>Services</p>
-                </div>
-                <div class="stat">
-                    <h3>10+</h3>
-                    <p>Specialists</p>
+                    <h3>34</h3>
+                    <p>Serviços</p>
                 </div>
             </div>
         </div>
@@ -64,8 +57,8 @@
                 <div class="booking-form-column">
                     <div class="booking-form-container">
                         <div class="form-header">
-                            <h2>Complete Your Booking</h2>
-                            <p>Fill in your details and choose your preferred service</p>
+                            <h2>Conclua sua reserva</h2>
+                            <p>Preencha o formulário abaixo e escolha o melhor horário para si.</p>
                         </div>
 
                         <form id="bookingForm" class="booking-form-premium">
@@ -74,25 +67,25 @@
                             <div class="form-step" data-step="1">
                                 <div class="step-header">
                                     <div class="step-number">1</div>
-                                    <h3>Your Information</h3>
+                                    <h3>Sua informação</h3>
                                 </div>
 
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label for="fullName">Full Name</label>
+                                        <label for="fullName">Nome Completo</label>
                                         <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required>
                                         <span class="input-icon"><i class="fas fa-user"></i></span>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="email">Email Address</label>
+                                        <label for="email">Endereço de Email</label>
                                         <input type="email" id="email" name="email" placeholder="jane@example.com" required>
                                         <span class="input-icon"><i class="fas fa-envelope"></i></span>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="phone">Phone Number</label>
+                                    <label for="phone">Número de Telefone</label>
                                     <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00" required>
                                     <span class="input-icon"><i class="fas fa-phone"></i></span>
                                 </div>
@@ -102,29 +95,29 @@
                             <div class="form-step" data-step="2">
                                 <div class="step-header">
                                     <div class="step-number">2</div>
-                                    <h3>Select Your Service</h3>
+                                    <h3>Selecionar Serviço</h3>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="serviceCategory">Service Category</label>
+                                    <label for="serviceCategory">Selecionar Categoria</label>
                                     <div class="custom-select">
                                         <select id="serviceCategory" name="serviceCategory" required>
-                                            <option value="">Choose a category...</option>
-                                            <option value="Nail Services">Nail Services</option>
-                                            <option value="Pedicure Services">Pedicure Services</option>
-                                            <option value="Eyelash Services">Eyelash Services</option>
-                                            <option value="Eyebrow Services">Eyebrow Services</option>
-                                            <option value="Hair Removal Services">Hair Removal Services</option>
-                                            <option value="Makeup Services">Makeup Services</option>
+                                            <option value="">Seleciona a categoria...</option>
+                                            <option value="Nail Services">Serviços de Manicure</option>
+                                            <option value="Pedicure Services">Serviços de Pedicure</option>
+                                            <option value="Eyelash Services"> Serviços de Pestanas</option>
+                                            <option value="Eyebrow Services">Serviços de sobrancelha</option>
+                                            <option value="Hair Removal Services">Serviços de depilação</option>
+                                            <option value="Makeup Services">Serviço de Maquilhagem</option>
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="service">Specific Service</label>
+                                    <label for="service">Serviço Especifico</label>
                                     <div class="custom-select">
                                         <select id="service" name="service" required>
-                                            <option value="">Select category first...</option>
+                                            <option value="">Seleciona Categoria primeiro...</option>
                                         </select>
                                     </div>
                                 </div>
@@ -138,41 +131,14 @@
                             <div class="form-step" data-step="3">
                                 <div class="step-header">
                                     <div class="step-number">3</div>
-                                    <h3>Schedule Your Appointment</h3>
+                                    <h3>Agende sua consulta</h3>
                                 </div>
 
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label for="date">Preferred Date</label>
+                                        <label for="date">Data Preferida</label>
                                         <input type="date" id="date" name="date" required>
                                         <span class="input-icon"><i class="fas fa-calendar"></i></span>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="time">Time</label>
-                                        <div class="custom-select">
-                                            <select id="time" name="time" required>
-                                                <option value="">Select time...</option>
-                                                <option value="10:00">10:00 AM</option>
-                                                <option value="10:30">10:30 AM</option>
-                                                <option value="11:00">11:00 AM</option>
-                                                <option value="11:30">11:30 AM</option>
-                                                <option value="12:00">12:00 PM</option>
-                                                <option value="12:30">12:30 PM</option>
-                                                <option value="13:00">1:00 PM</option>
-                                                <option value="13:30">1:30 PM</option>
-                                                <option value="14:00">2:00 PM</option>
-                                                <option value="14:30">2:30 PM</option>
-                                                <option value="15:00">3:00 PM</option>
-                                                <option value="15:30">3:30 PM</option>
-                                                <option value="16:00">4:00 PM</option>
-                                                <option value="16:30">4:30 PM</option>
-                                                <option value="17:00">5:00 PM</option>
-                                                <option value="17:30">5:30 PM</option>
-                                                <option value="18:00">6:00 PM</option>
-                                                <option value="18:30">6:30 PM</option>
-                                            </select>
-                                        </div>
                                     </div>
                                 </div>
 
@@ -192,21 +158,15 @@
                             <div class="form-step" data-step="4">
                                 <div class="step-header">
                                     <div class="step-number">4</div>
-                                    <h3>Final Details</h3>
+                                    <h3>Detalhes Finais</h3>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="notes">Special Requests</label>
+                                    <label for="notes">Pedidos Especiais</label>
                                     <textarea id="notes" name="notes" placeholder="Any specific requests or preferences?" rows="4"></textarea>
                                 </div>
-
-                                <div class="form-group checkbox-group">
-                                    <input type="checkbox" id="agree" name="agree" required>
-                                    <label for="agree">I agree to the terms and cancellation policy</label>
-                                </div>
-
                                 <button type="submit" class="btn btn-submit btn-primary">
-                                    <span>Confirm Booking</span>
+                                    <span>Confirmar reserva</span>
                                     <i class="fas fa-arrow-right"></i>
                                 </button>
                             </div>
@@ -216,10 +176,9 @@
                                 <div class="success-icon">
                                     <i class="fas fa-check-circle"></i>
                                 </div>
-                                <h3>Booking Confirmed!</h3>
-                                <p>Thank you for your booking. A confirmation email has been sent to your inbox.</p>
+                                <h3>Reserva confirmada!</h3>
                                 <p class="confirmation-details">
-                                    Our team will contact you shortly to confirm your appointment details.
+                                    Eu vou entrar em contato em breve para confirmar os detalhes do seu agendamento.
                                 </p>
                                 <button type="button" class="btn btn-secondary" onclick="location.href='index.html'">
                                     Back to Home
@@ -234,25 +193,21 @@
                     
                     <!-- Why Book With Us -->
                     <div class="info-card premium-card">
-                        <h3>Why Book With Us</h3>
+                        <h3>Por que reservar conosco?</h3>
                         <div class="benefits-list">
                             <div class="benefit-item">
                                 <div class="benefit-icon">
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <div class="benefit-text">
-                                    <h4>Expert Specialists</h4>
-                                    <p>Certified professionals with 5+ years experience</p>
+                                    <h4>Especialista</h4>
+                                    <p>Especialista certificado com mais de 5 anos de experiência.</p>
                                 </div>
                             </div>
 
                             <div class="benefit-item">
                                 <div class="benefit-icon">
                                     <i class="fas fa-flask-vial"></i>
-                                </div>
-                                <div class="benefit-text">
-                                    <h4>Premium Products</h4>
-                                    <p>Only high-quality, professional-grade materials</p>
                                 </div>
                             </div>
 
@@ -261,8 +216,8 @@
                                     <i class="fas fa-shield-check"></i>
                                 </div>
                                 <div class="benefit-text">
-                                    <h4>100% Sanitized</h4>
-                                    <p>Strict hygiene and sterilization standards</p>
+                                    <h4>100% higienizado</h4>
+                                    <p>Padrões rigorosos de higiene e esterilização</p>
                                 </div>
                             </div>
 
@@ -271,8 +226,8 @@
                                     <i class="fas fa-clock"></i>
                                 </div>
                                 <div class="benefit-text">
-                                    <h4>On-Time Service</h4>
-                                    <p>We respect your time and schedule</p>
+                                    <h4>Atendimento pontual</h4>
+                                    <p>Respeitamos seu tempo e seu horário.</p>
                                 </div>
                             </div>
                         </div>
@@ -280,21 +235,21 @@
 
                     <!-- Salon Info -->
                     <div class="info-card">
-                        <h3>Contact Information</h3>
+                        <h3>Informações de contato</h3>
                         <div class="salon-info">
                             <div class="info-block">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div>
-                                    <p class="label">Address</p>
-                                    <p>Moscow, Russia</p>
+                                    <p class="label">Endereço</p>
+                                    <p>Centro Comercial Das Ferreiras, R. da Estação De Comboios 1. Andar Loja 202 / 8200 Albufeira, Portugal</p>
                                 </div>
                             </div>
 
                             <div class="info-block">
                                 <i class="fas fa-phone"></i>
                                 <div>
-                                    <p class="label">Phone</p>
-                                    <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                                    <p class="label">Telefone</p>
+                                    <a href="tel:+79991234567">+351-967-835-790</a>
                                 </div>
                             </div>
 
@@ -302,7 +257,7 @@
                                 <i class="fas fa-envelope"></i>
                                 <div>
                                     <p class="label">Email</p>
-                                    <a href="mailto:bookings@beautystudio.ru">bookings@beautystudio.ru</a>
+                                    <a href="mailto:bookings@beautystudio.ru">Geyza-cabrita@hotmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -310,36 +265,20 @@
 
                     <!-- Hours -->
                     <div class="info-card">
-                        <h3>Opening Hours</h3>
+                        <h3>Horário de funcionamento</h3>
                         <div class="hours-list">
                             <div class="hour-item">
-                                <span>Monday - Friday</span>
+                                <span>Segunda-feira - Sexta-Feira </span>
                                 <strong>10:00 AM - 8:00 PM</strong>
                             </div>
                             <div class="hour-item">
-                                <span>Saturday</span>
-                                <strong>11:00 AM - 7:00 PM</strong>
+                                <span>Sábado</span>
+                                <strong>10:00 AM - 8:00 PM</strong>
                             </div>
                             <div class="hour-item closed">
-                                <span>Sunday</span>
+                                <span>Domingo</span>
                                 <strong>Closed</strong>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonials -->
-                    <div class="info-card">
-                        <h3>Client Testimonials</h3>
-                        <div class="testimonial">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p>"Amazing service! My nails look incredible. Highly recommend!"</p>
-                            <p class="testimonial-author">- Elena M.</p>
                         </div>
                     </div>
                 </div>
@@ -352,15 +291,15 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Beauty & Nail Salon</h4>
+                    <h4>Salão de beleza & Manicure</h4>
                     <ul>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#main-services">Services</a></li>
-                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="index.html#about">Sobre mim</a></li>
+                        <li><a href="index.html#main-services">Servicos</a></li>
+                        <li><a href="formulary.html">reserve agora</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Information</h4>
+                    <h4>Informação</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Cancellation Policy</a></li>
